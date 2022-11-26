@@ -1,0 +1,35 @@
+body{
+    background-color: white;
+    color: black;
+}
+
+nav{
+    display: none;
+}
+
+/*class targets*/
+
+.productimg{
+    display:none;
+}
+
+/*id targets*/
+
+#prompt{
+    display: none;
+}
+
+#mainlogo {
+    display: none;
+}
+
+#gameicons {
+    display: none;
+}
+
+/*detailed target*/
+
+a:after {
+    content: "("attr(href)")";
+}
+

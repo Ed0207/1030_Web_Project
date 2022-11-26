@@ -1,0 +1,421 @@
+/*Background image provided by Pexel.com for free commercial useage*/
+/*Navigation icon image provided by logomakr.com*/
+
+/*General target*/
+
+* {box-sizing: border-box;}
+
+body{
+    background-color: #031E4D;
+    background-image: url(images/background.png);
+    background-attachment: fixed;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: darkgray;
+}
+
+.wrapper{
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 1200px;
+    width: 95%;
+}
+
+header{
+    background-color:black;
+    padding: 0%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+nav{
+    margin-top: 0%;
+    font-size: 150%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-color: #222222;
+    text-align: center;
+    border-top: solid darkgrey;
+    border-bottom: solid darkgrey;
+    opacity: 1;
+    z-index: 2;
+}
+
+a{
+    text-decoration: none;
+    color: darkgrey;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+main {
+    background-color: #222222;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1px;
+    opacity: 0.9;
+}
+
+footer{
+    display: inline;
+    background: black;
+    opacity: 0.9;
+    font-size: 80%;
+}
+
+
+
+/*For dropdown menu*/
+
+
+
+.dropdown{
+    display: inline;
+    position: relative;
+    padding-bottom: 50px;
+    z-index: 2;
+}
+
+.dropdowni{
+    text-align:left;
+    display: none;
+    position: absolute;
+    z-index: 2;
+}
+
+
+
+/*More detailed target*/
+
+
+
+h1, h3{
+    text-align: center;
+}
+
+h2{
+    display: inline-block;
+    margin-left: 1%;
+}
+
+h4{
+    margin-left: 2%;
+    padding-bottom: 1%;
+    font-size: 125%;
+}
+
+p{
+    margin-left: 4%;
+}
+
+header img{
+    display:block;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main ul{
+    list-style-type:none;
+}
+
+main ul li{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav a{
+    display: inline;
+    padding: 5%;
+}
+
+
+
+/*For the class target*/
+
+
+
+.galleryimg{
+    margin: 1em;
+    border: double darkgrey 2px;
+}
+
+.gallerymobile{
+    display: none;
+    margin-right: auto;
+    margin-left: auto;
+    border: double darkgrey;
+}
+
+.home{
+    position: relative;
+}
+
+.productimg{
+    float: right;
+    border: double darkgrey 5px;
+    margin-top: 7px;
+    margin-right: 7px;
+}
+
+.products{
+    padding-left: 1%;
+    background-color: black;
+}
+
+.productimgm{
+    border: double darkgrey 2px;
+    margin-left:auto;
+    margin-right:auto;
+    display:none;
+}
+
+
+/*For the id target*/
+
+#who, #what, #how, #where, #contact, #form, #scriptpart{
+    padding-top:1%;
+    padding-bottom: 1%;
+    background-color: black;
+    margin-left: 0%;
+}
+
+#productmain{
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+#mainlogo{
+    display: block;
+    background-color: black;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.8;
+}
+
+#mainlogomo{
+    float: left;
+    display: none;
+}
+
+#mainlogos{
+    float: right;
+    display: none;
+}
+
+#bottom{
+    color: white;
+    margin-left:auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#locomap{
+    float: right;
+    width: 20%;
+    margin-top: 1%;
+    margin-right: 1%;  
+    border: darkgrey double 2px;
+}
+
+#who #introvid{
+    display: inline-block;
+}
+
+/*table for events*/
+
+#eventchart{
+    background: black;
+    border: darkgrey solid 2px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    padding: 1%;;
+}
+
+#eventchart tr, #eventchart th{
+    font-size: 125%;
+}
+
+#eventchart tr:nth-of-type(even){
+    color:darkgrey;
+    background:#454545;
+}
+
+
+#eventchart2{
+    background: black;
+    border: darkgrey solid 2px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    padding: 1%;;
+}
+
+#eventchart2 tr, #eventchart2 th{
+    font-size: 125%;
+}
+
+#eventchart2 tr:nth-of-type(even){
+    color:darkgrey;
+    background:#454545;
+}
+
+/*For form elements*/
+
+#contactform{
+    background-color: black;
+    padding: 1%;
+}
+
+label{
+    float:left;
+    display:block;
+    text-align: right;
+    width: 15%;
+    padding-right: 1em;
+}
+
+input{
+    display: block;
+    margin-bottom: 1em;
+}
+
+#mysubmit{
+    margin-left: 9.5em;
+}
+
+
+/*On hover property*/
+
+a:hover, #bottom:hover, #how:hover #check{
+    color: orange;
+}
+
+.galleryimg:hover, .gallerymobile:hover, .productimgm:hover, #locomap:hover{
+    border: orange double 2px;
+}
+
+h1:hover, #who:hover, #what:hover, #how:hover, #where:hover, #contact:hover, .products:hover, #eventchart tr:hover, #eventchart2 tr:hover, #scriptpart:hover{
+    color: white;
+}
+
+.products:hover .pricetag,#how:hover .pricetag{
+    color: peru;
+}
+
+.dropdown:hover .dropdowni{
+    display: inline-block;
+    min-width: 200px;
+    top: 50%;
+    left: 15%;
+    background-color: #222222;
+    border-bottom: solid orange;
+    z-index: 1;
+}
+
+nav:hover{
+    border-top: orange solid;
+    border-bottom: orange solid;
+}
+
+
+/*Mobile Version*/
+
+
+@media only all and (max-width: 365px){
+
+    .wrapper{
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 270px;
+    width: 90%;
+    }
+    nav { border-bottom: none;}
+
+    nav a{
+        text-align: left;
+        display: block;
+        border-bottom: solid darkgrey;
+    }
+
+    main ul{list-style-type: none;}
+
+    .galleryimg{ display:none;}
+    .gallerymobile{display:block;}
+    .productimg{display: none;}
+    .productimgm{display: block;}
+
+    #locomap{
+        float: none;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+    #mainlogo{display:none;}
+    #mainlogos{display: none;}
+    #introvid{
+        margin-left:auto;
+        margin-right: auto;
+        padding-left: auto;
+        padding-right: auto;
+        width:250px;
+        height: 200px;
+    }
+    #eventchart tr, #eventchart th{
+        font-size: 95%;
+    }
+    #eventchart{
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+    #eventchart2 tr, #eventchart2 th{
+        font-size: 95%;
+    }
+    #eventchart2{
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    #mainlogomo {
+        display:block;
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+    }
+
+    label{
+        float:none;
+        text-align: left;
+    }
+
+    .dropdown:hover {
+        margin-bottom: 50px;
+    }
+
+    .dropdown:hover .dropdowni{
+        padding-top: 15px;
+        display: block;
+        position: static;
+        min-width: 250px;
+        margin-left: auto;
+        margin-right: auto;
+        border-bottom: none;
+    }
+
+    nav:hover{
+        border-bottom: none;
+    }
+
+    nav a:hover{
+        border-bottom:orange solid;
+    }
+
+    .dropdownl{
+        padding-top: 1%;
+        padding-bottom: 1%;
+    }
+
+}
+

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta name="description" content="Die Hard Gaming ,the ultimate choice of gamers from West Canada, Provide the best gaming setup/equipments">
+        <title>Personal Web project - Edward Chen</title>
+        <link href="mystyle.css" rel="stylesheet" media="screen"/>
+        <link href="mystyleprint.css" rel="stylesheet" media="print"/>
+        <link href="images/naviconres.png" rel="icon"/>
+    </head>
+
+    <body>
+        <div class="wrapper">
+        <header id="top">
+            <img src="images/conceptlogov4.png" alt="Title logo" id="mainlogo"/>
+            <img src="images/conceptlogomo.png" alt="mobilelogo" id="mainlogomo"/>
+        </header>
+        
+        <nav>
+            <div class="dropdown">
+                        <a href="index.html"><img src="images/naviconhome.png" alt="iconimg" width="30" height="30"> Home</a>
+                            <div class="dropdowni">
+                                <a href="index.html#home1">&middot;who are we</a><br>
+                                <a href="index.html#home2">&middot;what we do</a><br>
+                                <a href="index.html#home3">&middot;How we work</a>
+                            </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href="products.html"><img src="images/naviconproduct.png" alt="iconimg" width="30" height="30"> Products</a>
+                        <div class="dropdowni">
+                            <a href="products.html#mouse">&middot;Gaming Mouse</a><br>
+                            <a href="products.html#keyboard">&middot;Gaming Keyboard</a>
+                        </div>
+                </div>
+            <a href="events.html"><img src="images/naviconevent.png" alt="iconimg" width="30" height="30"> Events</a>
+            <a href="gallery.html"><img src="images/navicongallery.png" alt="iconimg" width="30" height="30"> Gallery</a>
+            <div class="dropdown">
+                <a href="contactus.html"><img src="images/naviconcontact.png" alt="iconimg" width="30" height="30"> Contact Us</a>
+                    <div class="dropdowni">
+                        <a href="contactus.html#contact1">&middot;Where are we</a><br>
+                        <a href="contactus.html#contact2">&middot;Contact Info</a><br>
+                        <a href="contactus.html#contact3">&middot;Contact Form</a>                  
+                    </div>
+            </div>    
+     </nav>
+
+        <main onload="start()">
+                <h1>Upcoming Events Schedule</h1>
+                <table id="eventchart">
+                    <tr>
+                        <th colspan="3">2018 Event Schedule</th>
+                    </tr>
+                    <tr>
+                        <th>Event</th>
+                        <th>Date</th>
+                        <th>Details</th>
+                    </tr>
+                    <tr>
+                        <td>Kuala Lumpur Major</td>
+                        <td>Nov/9-18th/2018</td>
+                        <td>The first major tournament of the new season from popular game Dota 2</td>
+                    </tr>
+                    <tr>
+                        <td>Winter Warfare 2018</td>
+                        <td>Dec/2nd/2018</td>
+                        <td>Open-invitation major Counter Strike tournament that takes place in Vancouver<br>
+                            including a total price money of 70,000 &#36; </td>
+                    </tr>
+                    <tr>
+                        <td>ESL Pro League Season 8 Finals</td>
+                        <td>Dec/2nd/2018</td>
+                        <td>Long-lasting series of Counter Strike tournament is ending its 8th season with the showdown between the veterans Navi and Team Liquid.</td>
+                    </tr>
+                    <tr>
+                        <td>The Pinnacle 2018</td>
+                        <td>Dec/28th/2018</td>
+                        <td>The very first major for the new comer of the classic SSB series Super Smash Brother Ultimate.</td>
+                    </tr>
+                    <tr>
+                </table><br>
+                    
+                <table id="eventchart2">
+                    <tr>
+                    <th colspan="3">2019 Event Schedule</th>
+                    </tr>
+                    <tr>
+                        <th>Event</th>
+                        <th>Date</th>
+                        <th>Details</th>
+                    </tr>
+                    <tr>
+                        <td>IEM Katowice</td>
+                        <td>Feb/28th/2019</td>
+                        <td>Intel Extreme Masters series return with another major Counter Strike event scheduled from Feb/28/2019 to Mar/3rd/2019</td>
+                    </tr>
+                </table><br>
+                
+                <div id="scriptpart">
+                    <h3>Current Time: <br><span id="currenttime"></span></h3>
+                </div>
+        </main>
+
+        <a href="#top" id="bottom"><p>Back to Top</p></a><br>
+
+        <footer>
+                DIE HARD GAMING &reg; do not possess content copyright. All content belong to original content creator.<br>
+                DIE HARD GAMING &reg; was intended for non-commercial, non-profit purpose only.
+        </footer>
+        </div>
+    </body>
+
+    <script>
+        console.log("Hello");
+        function gettime(){
+            let d = new Date();
+            let date = d.toLocaleDateString();
+            let time = d.toLocaleTimeString();
+            document.querySelector("#currenttime").innerHTML = date + '&nbsp;' + time;
+            console.log(date + time);
+        };
+        gettime();
+        setInterval(gettime,1000);
+    </script>
+</html>
